@@ -56,7 +56,38 @@ const projects = [
     outcome: 'The shared notebook reports 84.6% holdout accuracy and 0.738 macro-F1 across 53,137 evaluated buildings. These are notebook-reported building-level results from the team experiment, not independently reproduced metrics.',
     next: 'Extend evaluation across disaster types and compare additional architectures with documented, reproducible splits.'
 
-  }
+  },
+
+{
+  slug: 'employee-api',
+  num: '05',
+  type: 'JAVA BACKEND ENGINEERING',
+  name: 'Employee Management REST API',
+  desc: 'A secure Spring Boot REST API with JWT authentication, PostgreSQL persistence, employee management, and automated CI testing.',
+  tags: ['Java 21', 'Spring Boot', 'PostgreSQL', 'JWT', 'Docker'],
+  icon: Server,
+  repo: 'https://github.com/raaghul07/employee-management-api',
+  overview: 'Built a secure employee management backend using Java 21 and Spring Boot. The application supports employee CRUD operations, pagination, sorting, department filtering, and case-insensitive search.',
+  challenge: 'Design a maintainable REST API that handles employee data securely while providing efficient querying, validation, and reproducible local development.',
+  architecture: [
+    'Expose REST endpoints through Spring Boot controllers',
+    'Authenticate users using Spring Security and JWT',
+    'Implement employee management business logic',
+    'Persist employee records in PostgreSQL',
+    'Containerize the application with Docker Compose',
+    'Run automated JUnit and Mockito tests through GitHub Actions'
+  ],
+  decisions: [
+    'Use JWT authentication to protect employee endpoints.',
+    'Separate API, business logic, and persistence responsibilities.',
+    'Support pagination and filtering for scalable data retrieval.',
+    'Use Docker Compose for reproducible development environments.',
+    'Automate build and test verification using GitHub Actions.'
+  ],
+  outcome: 'Implemented and locally tested the REST API, including authentication and protected employee operations. All 11 automated tests passed, and the GitHub Actions CI workflow completed successfully.',
+  next: 'Deploy the API to a cloud environment and add integration testing and monitoring.'
+}
+
 ];
 
 // Place your actual resume at public/resume.pdf, then change this to '/resume.pdf'.
@@ -170,7 +201,21 @@ const visualFlows = {
     ['IMAGERY', 'Before / after', 'cyan'], ['DATA', 'xView2 / SpaceNet', 'violet'],
     ['PREPROCESS', 'Image + labels', 'lime'], ['MODEL', 'PyTorch', 'coral'],
     ['ANALYZE', 'Damage classes', 'violet'], ['OUTPUT', 'Structured report', 'cyan']
-  ], foot: 'RESEARCH CAPSTONE WORKFLOW' }
+  ], foot: 'RESEARCH CAPSTONE WORKFLOW' },
+
+'employee-api': {
+  eyebrow: 'SECURE JAVA BACKEND',
+  nodes: [
+    ['CLIENT', 'REST Requests', 'cyan'],
+    ['SECURITY', 'Spring Security', 'violet'],
+    ['AUTH', 'JWT Tokens', 'lime'],
+    ['API', 'Spring Boot', 'cyan'],
+    ['DATABASE', 'PostgreSQL', 'coral'],
+    ['CI PIPELINE', 'GitHub Actions', 'violet']
+  ],
+  foot: 'JAVA 21 · SPRING BOOT · POSTGRESQL'
+}
+
 };
 
 function ProjectVisual({ slug, compact = false }) {

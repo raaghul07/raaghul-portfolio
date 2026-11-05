@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#101c2b"/>
+    <stop offset="1" stop-color="#17243a"/>
+  </linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#4de1d4"/>
+    <stop offset="1" stop-color="#b59aff"/>
+  </linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="8"/></filter>
+</defs>
+<rect width="900" height="560" rx="28" fill="url(#bg)"/>
+<circle cx="450" cy="260" r="180" fill="#4de1d4" opacity=".06" filter="url(#glow)"/>
+<text x="55" y="65" fill="#4de1d4" font-family="Arial" font-size="18" letter-spacing="4">JAVA BACKEND ENGINEERING</text>
+<text x="55" y="105" fill="#ffffff" font-family="Arial" font-size="29" font-weight="bold">EMPLOYEE MANAGEMENT API</text>
+<g font-family="Arial" text-anchor="middle">
+  <rect x="70" y="170" width="205" height="95" rx="15" fill="#20364a" stroke="#4de1d4" stroke-width="2"/>
+  <text x="172" y="208" fill="#4de1d4" font-size="18">CLIENT</text>
+  <text x="172" y="235" fill="#ffffff" font-size="15">REST Requests</text>
+  <rect x="350" y="170" width="205" height="95" rx="15" fill="#2b2945" stroke="#b59aff" stroke-width="2"/>
+  <text x="452" y="208" fill="#b59aff" font-size="18">SECURITY</text>
+  <text x="452" y="235" fill="#ffffff" font-size="15">JWT Authentication</text>
+  <rect x="630" y="170" width="205" height="95" rx="15" fill="#243b36" stroke="#c5f277" stroke-width="2"/>
+  <text x="732" y="208" fill="#c5f277" font-size="18">DATABASE</text>
+  <text x="732" y="235" fill="#ffffff" font-size="15">PostgreSQL</text>
+  <path d="M275 217 H350 M555 217 H630" stroke="url(#accent)" stroke-width="3" stroke-dasharray="7 6" fill="none"/>
+  <rect x="210" y="350" width="205" height="95" rx="15" fill="#20364a" stroke="#4de1d4" stroke-width="2"/>
+  <text x="312" y="388" fill="#4de1d4" font-size="18">BACKEND</text>
+  <text x="312" y="415" fill="#ffffff" font-size="15">Spring Boot · Java 21</text>
+  <rect x="490" y="350" width="205" height="95" rx="15" fill="#3b2b35" stroke="#ffad91" stroke-width="2"/>
+  <text x="592" y="388" fill="#ffad91" font-size="18">AUTOMATION</text>
+  <text x="592" y="415" fill="#ffffff" font-size="15">Docker · GitHub Actions</text>
+  <path d="M452 265 V310 H312 V350 M452 310 H592 V350" stroke="url(#accent)" stroke-width="2" stroke-dasharray="6 6" fill="none"/>
+</g>
+<text x="450" y="510" fill="#a8b7c9" font-family="Arial" font-size="16" text-anchor="middle" letter-spacing="3">SECURE · SCALABLE · TESTED</text>
+</svg>
